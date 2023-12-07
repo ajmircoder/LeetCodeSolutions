@@ -12,11 +12,11 @@ const printArry = (l, r, arr)=>{
     subArr.push(arr1);
     // console.log(arr1);
 }
-const subSet = (arr) => {
+const getAllSubArray = (arr) => {
     for (let i = 0; i < arr.length; i++) {
         for (let j = i; j < arr.length; j++) {
             printArry(i, j, arr)
         }
     }
 }
-subSet(arr);
+getAllSubArray(arr);
