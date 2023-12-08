@@ -3,6 +3,10 @@
 
 
 //solution 1
+
+// Time-complexity: O(log(n));
+// Space-complexity: O(n);
+
 var searchInsert = function(nums, target) {
     let left = 0;
     let right = nums.length - 1;
