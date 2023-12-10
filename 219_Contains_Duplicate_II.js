@@ -1,11 +1,8 @@
 //219. Contains Duplicate II
 // https://leetcode.com/problems/contains-duplicate-ii/description/
 
-/**
- * @param {number[]} nums
- * @param {number} k
- * @return {boolean}
- */
+// time-complexity- O(n);
+// space-complexity- O(n);
 var containsNearbyDuplicate = function(nums, k) {
     let map = new Map();
     for(let i = 0; i < nums.length; i++){
@@ -17,9 +14,9 @@ var containsNearbyDuplicate = function(nums, k) {
     return false;
 };
 
-
+// time-complexity- O(n^2);
+// space-complexity- O(1);
 var containsNearbyDuplicate = function(nums, k) {
-    let obj = {}
     for(let i = 0 ; i < nums.length; i++){
         for(let j = i + 1 ; j < nums.length; j++){
             if(nums[j] == nums[i] && j - i <= k){
@@ -30,4 +27,4 @@ var containsNearbyDuplicate = function(nums, k) {
     return false;
 };
 
-console.log(containsNearbyDuplicate(arr, 97))
+// console.log(containsNearbyDuplicate(arr, 97))
