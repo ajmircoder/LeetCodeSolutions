@@ -17,7 +17,7 @@ var missingNumber = function(nums) {
     }
     return value + 1
 };
-//time-complexity- O(2n);
+//time-complexity- O(n + log(n));
 //space-complexity- )(1)
 var missingNumber = function(nums) {
     nums.sort(function(a, b){return a - b});
