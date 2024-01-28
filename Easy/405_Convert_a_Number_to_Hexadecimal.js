@@ -2,7 +2,7 @@
 // https://leetcode.com/problems/convert-a-number-to-hexadecimal/description/
 
 // Solution: 1;
-// Time-complexity: O(log16N);
+// Time-complexity: O(log₁₆N);
 // Space-complexity: O(1);
 var toHex = function(num) {
     if(num == 0){
