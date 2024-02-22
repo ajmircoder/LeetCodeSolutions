@@ -3,7 +3,7 @@
 
 // Solution: 1;
 // Time-Complexity: O(n);
-// Space-Complexity: O(1);
+// Space-Complexity: O(n);
 var calPoints = function(operations) {
     let ans = [];
     for(let op of operations){
