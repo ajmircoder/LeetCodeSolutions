@@ -22,3 +22,23 @@ var intersection = function(nums1, nums2) {
     }
     return arr;
 };
+
+// Solution: 2;
+// Time-Complexity: o(Log(n));
+// Space-Complexity: o(1);
+var intersection = function(nums1, nums2) {
+    nums1.sort((a,b)=>a-b);
+    nums2.sort((a,b)=>a-b);
+    let i = 0, j = 0, ans = [];
+    while(i < nums1.length && j < nums2.length){
+        if(nums1[i] == nums2[j]){
+            if(!ans.includes(nums1[i])) ans.push(nums1[i])
+            i++;
+            j++;
+            continue;
+        }
+        if(nums1[i] > nums2[j]) j++
+        else i++
+    }
+    return ans
+};
